@@ -25,6 +25,10 @@ FROM CovidDeaths
 WHERE new_cases < 0
 
 -- Changing negative numbers in new cases to positive numbers --
+SELECT continent, location, new_cases, ABS (new_cases) AS pos_new_cases
+FROM CovidDeaths
+WHERE new_cases < 0
+
 SELECT continent, location, new_cases,
 CASE 
     WHEN new_cases < 0 THEN (new_cases * (-1))
