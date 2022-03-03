@@ -79,7 +79,7 @@ SELECT CovidDeaths.continent, CovidDeaths.location,
     SUM(CovidVaccinations.total_vaccinations) AS Total_Vaccinated,
     (SUM(CovidVaccinations.total_vaccinations) / SUM(CovidDeaths.population)) *100 AS Percentage_Vaccinated
 FROM CovidDeaths
-JOIN CovidVaccinations
+FULL OUTER JOIN CovidVaccinations
     ON CovidDeaths.location = CovidVaccinations.location
 WHERE CovidDeaths.continent IS NOT NULL
 GROUP BY 1, 2
