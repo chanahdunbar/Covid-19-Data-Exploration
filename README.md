@@ -1,5 +1,8 @@
-# Covid19
-MySQL file
-Link to dataset: https://ourworldindata.org/covid-deaths
-Note: Data in the link above was been split into two tables later named Covid Deaths and Covid Vaccinations to compare the different results. However, all data used can be found in the data set outlined above.
-This SQL file looks for to clean and validify the data being used. Then I seek to explore questions such as when Covid cases were the highest for each country, the number of covid cases at the height of the pandemic in the US, and much more.
+# Covid-19 Data Exploration
+
+Link: https://ourworldindata.org/covid-deaths 
+
+This application seeks to clean and validify Covid-19 data supplied by Our World in Data - which is linked about . The dataset has been split into two separate tables using Microsoft Excel and then later joined together using SQL to explore: 
+- The percentage of people who have been fully vaccinated per each country.
+- The percentage of people who have gotten at least one vaccination per each country. 
+- The percentage of positive Covid-19 tests and classifying them from High to Low.
